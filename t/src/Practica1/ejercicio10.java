@@ -1,4 +1,4 @@
-package ejercicio10;
+package Practica1;
 
 //Ejercicio de serialización. Considera la siguiente clase
 import java.util.*;

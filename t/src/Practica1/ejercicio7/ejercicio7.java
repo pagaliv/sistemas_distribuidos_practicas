@@ -1,4 +1,4 @@
-package ejercicio7;
+package Practica1.ejercicio7;
 
 import java.io.*;
 

@@ -1,8 +1,6 @@
-package ejercicio9;
+package Practica1.ejercicio9;
 
 import java.io.*;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.

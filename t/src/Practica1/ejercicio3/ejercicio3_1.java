@@ -1,15 +1,8 @@
-package ejercicio2;
+package Practica1.ejercicio3;
 
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
+import java.io.*;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class ejercicio2 {
-
+public class ejercicio3_1 {
     public static void main(String[] args) {
         //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
         // to see how IntelliJ IDEA suggests fixing it.
@@ -27,16 +20,13 @@ public class ejercicio2 {
     public static void leerficheros(String fichero, String archivo) throws IOException{
         byte buff[]=new byte[1024];
 
-        try(FileInputStream fis=new FileInputStream(fichero); FileOutputStream fos= new FileOutputStream(archivo);){
-            int n;
-            n=fis.read(buff);
-            while(n!=-1){
-                fos.write(buff,0,n);
-                n=fis.read(buff);
+        try(BufferedReader fis=new BufferedReader(new InputStreamReader(new FileInputStream(fichero))); Writer dos= new OutputStreamWriter( new FileOutputStream(archivo));){
+            String Linea;
+            while((Linea= fis.readLine()) != null){
+                dos.write(Linea + "\n");
             }
         }catch(IOException e){
             System.out.println("Error: "+e.getMessage());
         }
     }
-
 }

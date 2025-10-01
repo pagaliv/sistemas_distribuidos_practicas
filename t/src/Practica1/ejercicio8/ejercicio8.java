@@ -1,30 +1,29 @@
-package ejercicio3;
+package Practica1.ejercicio8;
 
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 
-public class ejercicio3_1 {
+public class ejercicio8 {
     public static void main(String[] args) {
         //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
         // to see how IntelliJ IDEA suggests fixing it.
-        if(args.length!=2){
+        if(args.length!=1){
             System.out.println("Argumentos incorrectos");
         }
 
         try{
-            leerficheros(args[0],args[1]);
+            escribirFichero(args[0]);
         }catch(IOException e){
             System.out.println("Error: "+e.getMessage());
         }
 
     }
-    public static void leerficheros(String fichero, String archivo) throws IOException{
+    public static void escribirFichero(String fichero) throws IOException{
         byte buff[]=new byte[1024];
 
-        try(BufferedReader fis=new BufferedReader(new InputStreamReader(new FileInputStream(fichero))); Writer dos= new OutputStreamWriter( new FileOutputStream(archivo));){
-            String Linea;
-            while((Linea= fis.readLine()) != null){
-                dos.write(Linea + "\n");
-            }
+        try(Writer dos= new OutputStreamWriter( new FileOutputStream(fichero), StandardCharsets.UTF_8);){
+            String Linea="Lapiz 1€";
+                dos.write(Linea);
         }catch(IOException e){
             System.out.println("Error: "+e.getMessage());
         }
