@@ -1,5 +1,6 @@
 package Practica2.ejercicio1;
 
+import java.net.InetAddress;
 import java.util.Scanner;
 
 public class ejercicio1_2 {
@@ -7,6 +8,13 @@ public class ejercicio1_2 {
         Scanner sc = new Scanner(System.in);
         System.out.println("Ingrese la ip o el dominio ");
         String ip = sc.nextLine();
+        if(itIsIP(ip)){
+
+        }
+
+    }
+    public static void sendDNSname(String ip){
+        InetAddress address = null;
 
     }
     public static boolean itIsIP(String input) {
