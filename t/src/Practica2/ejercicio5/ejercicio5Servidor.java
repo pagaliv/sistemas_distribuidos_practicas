@@ -6,7 +6,7 @@ import java.net.Socket;
 
 public class ejercicio5Servidor {
     public static void main(String[] args) {
-        try(ServerSocket servidor = new ServerSocket(9000);){
+        try(ServerSocket servidor = new ServerSocket(23405);){
             while(true){
                 try(Socket cliente = servidor.accept()) {
                     (new ClientHandler(cliente)).start();
