@@ -35,6 +35,7 @@ public class ejercicio5Cliente {
             int tam = (int)dir.length();
 
             String msg= ruta+" " +tam;
+            out.writeBytes(msg);
             try(FileInputStream fis = new FileInputStream(ruta);){
                 int enviados=0;
                 int b;

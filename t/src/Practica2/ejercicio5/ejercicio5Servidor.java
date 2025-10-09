@@ -25,8 +25,7 @@ public class ejercicio5Servidor {
         }
         @Override
         public void run() {
-            try (DataInputStream in = new DataInputStream(
-                    (clientSocket.getInputStream()));
+            try (DataInputStream in = new DataInputStream((clientSocket.getInputStream()));
                  DataOutputStream out = new DataOutputStream(clientSocket.getOutputStream());
                  ) {
                  String request = in.readLine();
