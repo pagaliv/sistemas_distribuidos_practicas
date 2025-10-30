@@ -1,0 +1,33 @@
+package Practica3.ejercicio2;
+
+
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class FileLineCounter extends Thread {
+    private String filePath;
+    private long lineCount;
+
+    public FileLineCounter(String filePath) {
+        this.filePath = filePath;
+        this.lineCount = 0;
+    }
+
+    @Override
+    public void run() {
+        try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
+            while (reader.readLine() != null) {
+                lineCount++;
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public long getLineCount() {
+        return lineCount;
+    }
+}
+
