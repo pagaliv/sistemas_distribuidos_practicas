@@ -1,0 +1,7 @@
+Crea un cliente que se conecte al servidor del ejercicio anterior y muestre un menú:
+
+Enviar nombre
+
+Salir
+
+El cliente debe mantener la conexión hasta que el usuario elija salir.

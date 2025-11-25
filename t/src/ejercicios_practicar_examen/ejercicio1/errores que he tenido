@@ -1,0 +1,20 @@
+hay que tener cuidado con BufferedWriter.write(), ya que he puesto:
+
+bw.write("Hola " + m + "Te has conectado", 0, 0);
+
+y
+
+El método write(String str, int off, int len) espera:
+
+str: el string a escribir
+
+off: posición de inicio en el string (debería ser 0)
+
+len: cuántos caracteres escribir (debería ser str.length())
+
+IMPORTANTE ESTO
+
+Además añadir un salto de linea al final
+
+
+MEJOR USAR PrintWriter

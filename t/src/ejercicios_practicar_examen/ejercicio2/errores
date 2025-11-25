@@ -1,0 +1,2 @@
+Tener en cuenta que en el cliente hay que pasar en Socket(host, puerto)
+a diferencia del servidor que solo hay que poner ServerSocket(puerto)
