@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pizzas [
+    <!ELEMENT pizzas (pizza+)>
+    <!ELEMENT pizza (ingrediente+, oferta?)>
+    <!ATTLIST pizza
+        nombre CDATA #REQUIRED
+        precio CDATA #REQUIRED
+    >
+    <!ELEMENT oferta EMPTY>
+    <!ELEMENT ingrediente (#PCDATA)>
+]>
+<pizzas>
+    <pizza precio="12.50" nombre="Margarita">
+        <ingrediente>Tomate</ingrediente>
+        <ingrediente>Mozzarella</ingrediente>
+        <ingrediente>Albahaca</ingrediente>
+        <oferta/>
+    </pizza>
+    
+    <pizza precio="14.00" nombre="Pepperoni">
+        <ingrediente>Tomate</ingrediente>
+        <ingrediente>Mozzarella</ingrediente>
+        <ingrediente>Pepperoni</ingrediente>
+        <ingrediente>Orégano</ingrediente>
+    </pizza>
+    
+    <pizza precio="16.50" nombre="Cuatro Quesos">
+        <ingrediente>Mozzarella</ingrediente>
+        <ingrediente>Gorgonzola</ingrediente>
+        <ingrediente>Parmesano</ingrediente>
+        <ingrediente>Fontina</ingrediente>
+        <oferta/>
+    </pizza>
+    
+    <pizza precio="13.00" nombre="Vegetal">
+        <ingrediente>Tomate</ingrediente>
+        <ingrediente>Mozzarella</ingrediente>
+        <ingrediente>Pimiento</ingrediente>
+        <ingrediente>Cebolla</ingrediente>
+        <ingrediente>Aceitunas</ingrediente>
+        <ingrediente>Champiñones</ingrediente>
+    </pizza>
+    
+    <pizza precio="15.75" nombre="Hawaiana">
+        <ingrediente>Tomate</ingrediente>
+        <ingrediente>Mozzarella</ingrediente>
+        <ingrediente>Jamón York</ingrediente>
+        <ingrediente>Piña</ingrediente>
+    </pizza>
+</pizzas>
