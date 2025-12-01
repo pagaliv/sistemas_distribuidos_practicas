@@ -1,0 +1,11 @@
+<!ELEMENT cine (pelicula+)>
+<!ELEMENT pelicula (titulo, director, duracion, genero?)>
+<!ATTLIST pelicula
+    id ID #REQUIRED
+    año CDATA #IMPLIED
+    clasificacion (G|PG|PG-13|R) "G"
+>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT director (#PCDATA)>
+<!ELEMENT duracion (#PCDATA)>
+<!ELEMENT genero (#PCDATA)>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cine SYSTEM "cine.dtd">
+<cine>
+    <pelicula id="P001" año="1994" clasificacion="R">
+        <titulo>Pulp Fiction</titulo>
+        <director>Quentin Tarantino</director>
+        <duracion>154</duracion>
+        <genero>Drama</genero>
+    </pelicula>
+    <pelicula id="P002" año="2008" clasificacion="PG-13">
+        <titulo>The Dark Knight</titulo>
+        <director>Christopher Nolan</director>
+        <duracion>152</duracion>
+        <genero>Acción</genero>
+    </pelicula>
+    <pelicula id="P003" año="1999">
+        <titulo>Matrix</titulo>
+        <director>Lana Wachowski</director>
+        <duracion>136</duracion>
+    </pelicula>
+    <pelicula id="P004" año="1972" clasificacion="R">
+        <titulo>El Padrino</titulo>
+        <director>Francis Ford Coppola</director>
+        <duracion>175</duracion>
+        <genero>Drama</genero>
+    </pelicula>
+</cine>
