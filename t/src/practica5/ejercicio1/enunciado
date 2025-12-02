@@ -1,0 +1,10 @@
+Los documentos contendrán al menos una pizza. Cada pizza tendrá dos atributos: su precio
+ (en euros) y su nombre (en ese orden). Cada pizza incluirá una serie de elementos para
+  los ingredientes. Cada ingrediente será un elemento que contendrá el nombre del 
+  ingrediente. Opcionalmente una pizza puede tener un elemento
+vacío (aparecerá detrás de los ingredientes) que indique si está o no de oferta.
+
+Para crear/editar un DTD puedes usar el entorno de desarrollo Eclipse. 
+Para ello pulsa con el botón derecho sobre el paquete correspondiente,
+ nuevo, otros, en el asistente de creación de elementos selecciona la
+categoría XML y después el tipo de fichero adecuado.

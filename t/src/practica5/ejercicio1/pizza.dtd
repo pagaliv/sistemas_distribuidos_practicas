@@ -1,1 +1,8 @@
-<!ELEMENT pizza (#PCDATA)>
+<!ELEMENT pizzas (pizza+)>
+<!ELEMENT pizza (ingrediente+, oferta?)>
+<!ATTLIST pizza
+    nombre CDATA #REQUIRED
+    precio CDATA #REQUIRED
+>
+<!ELEMENT oferta  EMPTY>
+<!ELEMENT ingrediente (#PCDATA)>

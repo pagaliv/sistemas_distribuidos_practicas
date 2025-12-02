@@ -31,5 +31,9 @@ public class ejercicio3 {
             System.out.println("Error: "+e.getMessage());
         }
     }
+    static class Innerejercicio3 {
+    
+        
+    }
 
 }
